@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+h1 {
+    color: #3067ff;
+    margin-bottom: 15px;
+    text-align: center;
+}
+input[type=text] {
+    border: 1px solid #3067ff;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 18px;
+    height: 45px;
+    border-radius: 5px;
+}
+button {
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+li {
+    list-style: none;
+}
+label {
+    cursor: pointer;
+}
+.todo-container {
+    width: 100%;
+    max-width: 520px;
+    border: 1px solid #edf4ff;
+    margin: 80px auto;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 10px 15px rgba(8, 34, 83, 0.1);
+    border-radius: 14px;
+}
+.todo-container .input-wrap { 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.todo-container .text-box {
+    width: calc(100% - 55px);
+}
+.todo-container .input-wrap button {
+    width: 45px;
+    height: 45px;
+    background-color: #3067ff;
+    color: #fff;
+    font-size: 24px;
+}
+.item-list {
+    margin-top: 35px;
+}
+.item-list .item {
+    border-top: 1px dashed #ddd;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item-list .item:last-child {
+    border-bottom: 1px dashed #ddd;
+}
+.item-list .check-item {
+    width: calc(100% - 55px);
+}
+.item-list .check-item input[type=checkbox] {
+    display: none;
+}
+.item-list .check-item label {
+    background: url(./img/check.svg) no-repeat left center / 25px;
+    vertical-align: middle;
+    padding-left: 30px;
+    display: inline-block;
+}
+.item-list .check-item.checked label {
+    background-image: url(./img/check_fill.svg);
+}
+.item-list .item-delete {
+    width: 45px;
+    height: 35px;
+    background: none;
+    border: 1px solid #d3dce9;
+    color: rgb(255, 122, 133);
+}
