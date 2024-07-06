@@ -30,7 +30,7 @@ label {
     cursor: pointer;
 }
 .todo-container {
-    width: 100%;
+    width: calc(100% - 40px);
     max-width: 520px;
     border: 1px solid #edf4ff;
     margin: 80px auto;
@@ -55,7 +55,6 @@ label {
     font-size: 24px;
     border: 0;
     border-radius: 5px;
-    cursor: pointer;
 }
 .item-list {
     margin-top: 35px;
